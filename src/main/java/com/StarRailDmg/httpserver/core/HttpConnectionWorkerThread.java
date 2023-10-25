@@ -3,6 +3,7 @@ package com.StarRailDmg.httpserver.core;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -24,14 +25,11 @@ public class HttpConnectionWorkerThread extends Thread {
             inputStream = socket.getInputStream();
             outputStream = socket.getOutputStream();
 
-            int _byte;
-
-            while ((_byte = inputStream.read()) >= 0) {
-                System.out.print((char) _byte);
-            }
-
             //HTML page that we send to the browser
             String html = "<html><head><title>Simple Honkai Star Rail Damage Calculator</title></head><body><h1>Served by a simple java http server</h1></body></html>";
+
+            File file new File("index.html");
+            String newhtml = "";
 
             final String CRLF = "\n\r";
             String response =

@@ -2,6 +2,7 @@ package com.StarRailDmg;
 
 public class DamageCalculations {
 
+
     /**
     *Damage is calculated after taking into account individual multipliers
      */
