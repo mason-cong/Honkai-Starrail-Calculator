@@ -1,9 +1,51 @@
 body {
-  background-color: powderblue;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+  rgba(0, 0, 0, 0.7)), url('background_images/default1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  height: 100vh;
 }
-h1 {
-  color: blue;
+
+.pageWrapper {
+    height: 100%;
+    width: 100%;
 }
-p {
-  color: red;
+
+.banner {
+    height: 75px;
+    background-color: #221F1F;
+    border-bottom: 1px solid #33343a;
+    text-align center;
+    font-size: 3em;
+}
+
+#damageDisplay {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    padding: 1em;
+}
+
+.mainContent {
+    height: 100%;
+    width: 100%;
+}
+
+.leftMenu {
+    background-color: #221F1F;
+    position: fixed;
+    width: 200px;
+    border-left: 1px solid #33343a;
+}
+
+.rightCalculator {
+    margin-left: 200px;
+    position: relative;
+}
+
+.rightContent {
+    background-color: blue;
+    padding: 60px 40px 60px;
+    position: relative;
 }

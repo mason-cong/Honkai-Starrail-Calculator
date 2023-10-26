@@ -28,9 +28,6 @@ public class HttpConnectionWorkerThread extends Thread {
             //HTML page that we send to the browser
             String html = "<html><head><title>Simple Honkai Star Rail Damage Calculator</title></head><body><h1>Served by a simple java http server</h1></body></html>";
 
-            File file new File("index.html");
-            String newhtml = "";
-
             final String CRLF = "\n\r";
             String response =
                     "HTTP1.1 200 OK" + CRLF + //Status line
