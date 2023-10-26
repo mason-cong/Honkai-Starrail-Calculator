@@ -5,20 +5,10 @@ body {
   background-size: cover;
   color: #FFFFFF;
   height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.pageWrapper {
-    height: 100%;
-    width: 100%;
-}
-
-.banner {
-    height: 75px;
-    background-color: #221F1F;
-    border-bottom: 1px solid #33343a;
-    text-align center;
-    font-size: 3em;
-}
 
 #damageDisplay {
     text-align: center;
@@ -32,16 +22,33 @@ body {
     width: 100%;
 }
 
+.banner {
+    background-color: #221F1F;
+    border-bottom: 1px solid #33343a;
+    max-height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    text-align: center;
+    font-size: 3em;
+    padding: 0.2em;
+    width: 100%;
+}
+
 .leftMenu {
     background-color: #221F1F;
-    position: fixed;
     width: 200px;
     border-left: 1px solid #33343a;
+    position: fixed;
+    z-index: 2;
 }
 
 .rightCalculator {
+    margin-top: 75px;
     margin-left: 200px;
     position: relative;
+    z-index: 1;
 }
 
 .rightContent {
